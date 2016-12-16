@@ -1,0 +1,99 @@
+body{
+  background-image: url(../images/bn01%20blur.jpg) no-repeat center center;
+  background-size: cover;
+  font-family: "Gotham Rounded", "Proxima Nova",sans-serif;
+  font-weight: 400;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+    
+}
+#photos {
+  opacity: .88;
+}
+
+#photos li{
+    height:350px;
+/*    width:100%;*/
+    width:250px;
+    margin: 1px;
+    display:inline-block;
+    overflow: hidden;
+    padding:0
+    
+}
+
+#photos a {
+    margin:0;
+    padding:0;
+}
+
+#photos img {
+    height: 350px;
+    width:auto;
+    
+/*
+  width: 30%;
+  float: left;
+  display: block;
+  margin: 2px;
+*/
+}
+
+ul {
+  list-style: none;
+  margin: 0px auto;
+  padding: 10px;
+  display: block;
+  max-width: 780px;
+  text-align: center;
+}
+
+#overlay {
+  background: rgba(255,255,255, .5);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  text-align: center;
+}
+
+#overlay img {
+  margin: 10% auto 0;
+  height: 550px;
+  border-radius: 5px;
+}
+
+#photos {
+  width: 100%;
+}
+
+#photo-gallery {
+  width: 100%;
+}
+#logo {
+  position: absolute;
+  top:50px;
+  left: 50px;
+  z-index: 2100;
+  font-weight: 700;
+  font-size: 18px;
+  margin: 0;
+  letter-spacing: .125em;
+  transform: translateY(0);
+  transition: all .4s;
+  transition-delay: .1s;
+    color: gainsboro;
+}
+.photo-on #logo  {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+#logo:hover {
+  color: #80a98a;
+}
+.photo-on #photo-link #photo-link2 #logo {
+  opacity: 0;
+  transform: translateY(-20px);
+}
